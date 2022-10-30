@@ -1,0 +1,363 @@
+{
+    "vaccination":{
+        "1":{
+            "vaccination_date":"2012-11-03T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "2":{
+            "vaccination_date":"2013-11-09T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "3":{
+            "vaccination_date":"2014-11-15T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "4":{
+            "vaccination_date":"2015-11-21T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "5":{
+            "vaccination_date":"2016-11-26T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "6":{
+            "vaccination_date":"2017-12-02T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "7":{
+            "vaccination_date":"2018-12-08T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "8":{
+            "vaccination_date":"2019-12-14T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "9":{
+            "vaccination_date":"2020-12-19T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        },
+        "10":{
+            "vaccination_date":"2021-03-13T18:35:22Z",
+            "vaccination_description":"SARS-COV-2 (COVID-19) vaccine  mRNA  spike protein  LNP  preservative free  100 mcg/0.5mL dose",
+            "vaccination_cost":136
+        }, 
+        "11":{
+            "vaccination_date":"2021-04-10T18:35:22Z",
+            "vaccination_description":"SARS-COV-2 (COVID-19) vaccine  mRNA  spike protein  LNP  preservative free  100 mcg/0.5mL dose",
+            "vaccination_cost":136
+        }, 
+        "12":{
+            "vaccination_date":"2021-12-25T18:35:22Z",
+            "vaccination_description":"Influenza  seasonal  injectable  preservative free",
+            "vaccination_cost":136
+        }, 
+        "13":{
+            "vaccination_date":"2021-12-25T18:35:22Z",
+            "vaccination_description":"Td (adult) preservative free",
+            "vaccination_cost":136
+        }   
+    },
+    "medicines":{
+        "1":{
+            "medicine_start_date":"2014-02-03T18:35:22Z",
+            "medicine_stop_date":"2014-11-15T18:35:22Z",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":43330.41
+        },
+        "2":{
+            "medicine_start_date":"2014-11-15T18:35:22Z",
+            "medicine_stop_date":"2015-11-21T18:35:22Z",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":4302.21
+        },
+        "3":{
+            "medicine_start_date":"2014-11-15T18:35:22Z",
+            "medicine_stop_date":"2015-11-21T18:35:22Z",
+            "medicine_name":"lisinopril 10 MG Oral Tablet",
+            "medicine_cost":3.64
+        },
+        "4":{
+            "medicine_start_date":"2014-12-15T18:35:22Z",
+            "medicine_stop_date":"2015-11-21T18:35:22Z",
+            "medicine_name":"Hydrochlorothiazide 25 MG Oral Tablet",
+            "medicine_cost":1.74
+        },
+        "5":{
+            "medicine_start_date":"2015-02-13T18:35:22Z",
+            "medicine_stop_date":"2015-11-21T18:35:22Z",
+            "medicine_name":"amLODIPine 2.5 MG Oral Tablet",
+            "medicine_cost":2.91
+        },
+        "6":{
+            "medicine_start_date":"2015-11-21T18:35:22Z",
+            "medicine_stop_date":"2016-11-26T18:35:22Z",
+            "medicine_name":"Hydrochlorothiazide 25 MG Oral Tablet",
+            "medicine_cost":3
+        },
+        "7":{
+            "medicine_start_date":"2015-11-21T18:35:22Z",
+            "medicine_stop_date":"2016-11-26T18:35:22Z",
+            "medicine_name":"lisinopril 10 MG Oral Tablet",
+            "medicine_cost":3.64
+        },
+        "8":{
+            "medicine_start_date":"2015-11-21T18:35:22Z",
+            "medicine_stop_date":"2016-11-26T18:35:22Z",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":82255.05
+        },
+        "9":{
+            "medicine_start_date":"2015-11-21T18:35:22Z",
+            "medicine_stop_date":"2016-11-26T18:35:22Z",
+            "medicine_name":"amLODIPine 2.5 MG Oral Tablet",
+            "medicine_cost":4.08
+        },
+        "10":{
+            "medicine_start_date":"2016-11-26T18:35:22Z",
+            "medicine_stop_date":"2017-12-02T18:35:22Z",
+            "medicine_name":"Hydrochlorothiazide 25 MG Oral Tablet",
+            "medicine_cost":2.24
+        },
+        "11":{
+            "medicine_start_date":"2016-11-26T18:35:22Z",
+            "medicine_stop_date":"2017-12-02T18:35:22Z",
+            "medicine_name":"lisinopril 10 MG Oral Tablet",
+            "medicine_cost":3.64
+        },
+        "12":{
+            "medicine_start_date":"2016-11-26T18:35:22Z",
+            "medicine_stop_date":"2017-12-02T18:35:22Z",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":63162.33
+        },
+        "13":{
+            "medicine_start_date":"2016-11-26T18:35:22Z",
+            "medicine_stop_date":"2017-12-02T18:35:22Z",
+            "medicine_name":"amLODIPine 2.5 MG Oral Tablet",
+            "medicine_cost":3.92
+        },
+        "14":{
+            "medicine_start_date":"2017-12-02T18:35:22Z",
+            "medicine_stop_date":"2018-12-08T18:35:22Z",
+            "medicine_name":"Hydrochlorothiazide 25 MG Oral Tablet",
+            "medicine_cost":3.28
+        },
+        "15":{
+            "medicine_start_date":"2017-12-02T18:35:22Z",
+            "medicine_stop_date":"2018-12-08T18:35:22Z",
+            "medicine_name":"lisinopril 10 MG Oral Tablet lisinopril 10 MG Oral Tablet",
+            "medicine_cost":3.64
+        },
+        "16":{
+            "medicine_start_date":"2017-12-02T18:35:22Z",
+            "medicine_stop_date":"2018-12-08T18:35:22Z",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":45899.82
+        },
+        "17":{
+            "medicine_start_date":"2017-12-02T18:35:22Z",
+            "medicine_stop_date":"2018-12-08T18:35:22Z",
+            "medicine_name":"amLODIPine 2.5 MG Oral Tablet",
+            "medicine_cost":3.72
+        },
+        "18":{
+            "medicine_start_date":"2018-12-08T18:35:22Z",
+            "medicine_stop_date":"2019-12-14T18:35:22Z",
+            "medicine_name":"Hydrochlorothiazide 25 MG Oral Tablet",
+            "medicine_cost":2.68
+        },
+        "19":{
+            "medicine_start_date":"2018-12-08T18:35:22Z",
+            "medicine_stop_date":"2019-12-14T18:35:22Z",
+            "medicine_name":"lisinopril 10 MG Oral Tablet",
+            "medicine_cost":3.64
+        },
+        "20":{
+            "medicine_start_date":"2018-12-08T18:35:22Z",
+            "medicine_stop_date":"2019-12-14T18:35:22Z",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":49445.46
+        },
+        "21":{
+            "medicine_start_date":"2018-12-08T18:35:22Z",
+            "medicine_stop_date":"2019-12-14T18:35:22Z",
+            "medicine_name":"amLODIPine 2.5 MG Oral Tablet",
+            "medicine_cost":4.56
+        },
+        "22":{
+            "medicine_start_date":"2019-12-14T18:35:22Z",
+            "medicine_stop_date":"2020-12-19T18:35:22Z",
+            "medicine_name":"Hydrochlorothiazide 25 MG Oral Tablet",
+            "medicine_cost":2.12
+        },
+        "23":{
+            "medicine_start_date":"2019-12-14T18:35:22Z",
+            "medicine_stop_date":"2020-12-19T18:35:22Z",
+            "medicine_name":"lisinopril 10 MG Oral Tablet",
+            "medicine_cost":3.64
+        },
+        "24":{
+            "medicine_start_date":"2019-12-14T18:35:22Z",
+            "medicine_stop_date":"2020-12-19T18:35:22Z",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":33769.44
+        },
+        "25":{
+            "medicine_start_date":"2019-12-14T18:35:22Z",
+            "medicine_stop_date":"2020-12-19T18:35:22Z",
+            "medicine_name":"amLODIPine 2.5 MG Oral Tablet",
+            "medicine_cost":4.48
+        },
+        "26":{
+            "medicine_start_date":"2020-12-19T18:35:22Z",
+            "medicine_stop_date":"2021-12-25T18:35:22Z",
+            "medicine_name":"Hydrochlorothiazide 25 MG Oral Tablet",
+            "medicine_cost":2.76
+        },
+        "27":{
+            "medicine_start_date":"2020-12-19T18:35:22Z",
+            "medicine_stop_date":"2021-12-25T18:35:22Z",
+            "medicine_name":"lisinopril 10 MG Oral Tablet",
+            "medicine_cost":3.64
+        },
+        "28":{
+            "medicine_start_date":"2020-12-19T18:35:22Z",
+            "medicine_stop_date":"2021-12-25T18:35:22Z",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":130989.66
+        },
+        "29":{
+            "medicine_start_date":"2020-12-19T18:35:22Z",
+            "medicine_stop_date":"2021-12-25T18:35:22Z",
+            "medicine_name":"amLODIPine 2.5 MG Oral Tablet",
+            "medicine_cost":3.96
+        },
+        "30":{
+            "medicine_start_date":"2021-12-25T18:35:22Z",
+            "medicine_stop_date":"",
+            "medicine_name":"Hydrochlorothiazide 25 MG Oral Tablet",
+            "medicine_cost":1.5
+        },
+        "31":{
+            "medicine_start_date":"2021-12-25T18:35:22Z",
+            "medicine_stop_date":"",
+            "medicine_name":"lisinopril 10 MG Oral Tablet",
+            "medicine_cost":2.73
+        },
+        "32":{
+            "medicine_start_date":"2021-12-25T18:35:22Z",
+            "medicine_stop_date":"",
+            "medicine_name":"Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+            "medicine_cost":84685.23
+        },
+        "33":{
+            "medicine_start_date":"2021-12-25T18:35:22Z",
+            "medicine_stop_date":"",
+            "medicine_name":"amLODIPine 2.5 MG Oral Tablet",
+            "medicine_cost":2.88
+        }
+    },
+    "tests":{
+        "1":{
+            "test_date":"2012-11-03T18:35:22Z",
+            "test_category":"vital-signs",
+            "test_description":"Body Height",
+            "test_results":"183.6",
+            "test_result_unit":"cm"
+        },
+        "2":{
+            "test_date":"2012-11-03T18:35:22Z",
+            "test_category":"laboratory",
+            "test_description":"Hematocrit [Volume Fraction] of Blood by Automated count",
+            "test_results":"47.9",
+            "test_result_unit":"%"
+        },
+        "3":{
+            "test_date":"2013-11-09T19:27:20Z",
+            "test_category":"survey",
+            "test_description":"In the past year  have you been afraid of your partner or ex-partner?",
+            "test_results":"No",
+            "test_result_unit":"n/a"
+        }
+    },
+    "personal-details":{
+        "birthdate":"1960-10-23",
+        "social_security_number":"999-64-2157",
+        "drivers_license_number":"S99960921",
+        "passport_number":"X42987477X",
+        "patient_prefix":"Mr.",
+        "patient_first_name":"Mauricio81",
+        "patient_last_name":"Ziemann98",
+        "patient_marital_status":"Married",
+        "patient_race":"white",
+        "patient_ethnicity":"nonhispanic",
+        "patient_gender":"M",
+        "patient_birthplace":"Lawrence  Massachusetts  US",
+        "patient_current_address":"112 Willms Common Apt 48",
+        "patient_city":"Fall River",
+        "patient_state":"Massachusetts",
+        "patient_county":"Bristol County",
+        "patient_pincode":"25005",
+        "patient_zip":"2790",
+        "healthcare_expenses":274373.08,
+        "healthcare_coverage":29375.77,
+        "income":33474
+    },
+    "insurance_details":{
+        "insurance_provider":"Medicaid",
+        "amount_covered":29375.77,
+        "amount_uncovered":252.37,
+        "revenue":130,
+        "covered_encounters":3,
+        "uncovered_encounters":0,
+        "covered_medications":4,
+        "uncovered_medications":0,
+        "covered_procedures":1,
+        "uncovered_procedures":0,
+        "covered_immunizations":4,
+        "uncovered_immunizations":0,
+        "unique_customers":1,
+        "member_months":12
+    },
+    "treatment_details":{
+        "1":{
+            "treatment_start_date":"2012-11-03T18:35:22Z",
+            "treatment_end_date":"2012-11-03T19:26:17Z",
+            "treatment_description":"Assessment of health and social care needs (procedure)",
+            "treatment_cost":431.4
+        },
+        "2":{
+            "treatment_start_date":"2014-02-06T18:35:22Z",
+            "treatment_end_date":"2014-02-06T19:34:53Z",
+            "treatment_description":"Movement therapy (regime/therapy)",
+            "treatment_cost":431.4
+        },
+        "3":{
+            "treatment_start_date":"2014-11-15T18:35:22Z",
+            "treatment_end_date":"2014-11-15T19:35:03Z",
+            "treatment_description":"Assessment of health and social care needs (procedure)",
+            "treatment_cost":431.4
+        },
+        "4":{
+            "treatment_start_date":"2014-11-15T18:35:22Z",
+            "treatment_end_date":"2014-11-15T18:50:22Z",
+            "treatment_description":"Medication Reconciliation (procedure)",
+            "treatment_cost":401.45
+        },
+        "5":{
+            "treatment_start_date":"2015-11-21T19:26:37Z",
+            "treatment_end_date":"2015-11-21T19:40:11Z",
+            "treatment_description":"Depression screening (procedure)",
+            "treatment_cost":431.4
+        }
+    }
+}
