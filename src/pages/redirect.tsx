@@ -48,6 +48,14 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
       },
     };
   }
+  if (data?.userrole === "PATIENT") {
+    return {
+      redirect: {
+        destination: "/patient/medicalhistory",
+        permanent: false,
+      },
+    };
+  }
   return {
     props: {
       user,

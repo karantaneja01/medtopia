@@ -31,6 +31,7 @@ export default function Example() {
   const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(
     deliveryMethods[0]
   );
+  const [image, setImage] = useState("");
   const [allData, setAllData] = useState({
     date: "",
     chartno: "",
@@ -48,7 +49,6 @@ export default function Example() {
     payment: "",
     balance: "",
     deliverymethod: selectedDeliveryMethod,
-    image: "",
   });
 
   function encodeFileBase64(file: File) {
@@ -69,7 +69,11 @@ export default function Example() {
     } else {
       toast.loading("Loading...");
       mutation.mutate(
-        { email: session.user.email, superbill: JSON.stringify(allData) },
+        {
+          email: session.user.email,
+          superbill: JSON.stringify(allData),
+          image,
+        },
         {
           onSuccess(data, variables, context) {
             if (data.success) {
@@ -564,10 +568,11 @@ export default function Example() {
                     const file = e.target.files[0];
                     if (file) {
                       const encodedfile = await encodeFileBase64(file);
-                      setAllData({
-                        ...allData,
-                        image: encodedfile as string,
-                      });
+                      // setAllData({
+                      //   ...allData,
+                      //   image: encodedfile as string,
+                      // });
+                      setImage(encodedfile as string);
                     }
                   }
                 }}

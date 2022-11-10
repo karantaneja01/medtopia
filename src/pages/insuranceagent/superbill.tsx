@@ -31,14 +31,14 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
       email: user.user.email,
     },
   });
-  if (data?.userrole !== "INSURANCE_AGENT") {
-    return {
-      redirect: {
-        destination: "/redirect",
-        permanent: false,
-      },
-    };
-  }
+  // if (data?.userrole !== "INSURANCE_AGENT") {
+  //   return {
+  //     redirect: {
+  //       destination: "/redirect",
+  //       permanent: false,
+  //     },
+  //   };
+  // }
   return {
     props: {
       user,

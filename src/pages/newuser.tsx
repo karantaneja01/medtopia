@@ -152,14 +152,14 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
       email: user.user.email,
     },
   });
-  if (data?.userrole !== "UNSPECIFIED") {
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
-    };
-  }
+  // if (data?.userrole !== "UNSPECIFIED") {
+  //   return {
+  //     redirect: {
+  //       destination: "/",
+  //       permanent: false,
+  //     },
+  //   };
+  // }
   return {
     props: {
       user,

@@ -64,6 +64,7 @@ export const userRouter = router({
       z.object({
         email: z.string(),
         superbill: z.string(),
+        image: z.string(),
       })
     )
     .mutation(async ({ ctx, input }) => {
@@ -80,6 +81,7 @@ export const userRouter = router({
         const superbill = await ctx.prisma.superBill.create({
           data: {
             data: input.superbill,
+            image: input.image,
             User: {
               connect: {
                 email: input.email,

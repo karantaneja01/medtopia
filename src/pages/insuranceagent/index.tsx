@@ -1,54 +1,35 @@
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { unstable_getServerSession } from "next-auth/next";
-import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { HiPlus } from "react-icons/hi";
 import Navbar from "../../components/Global/Navbar";
-import { trpc } from "../../utils/trpc";
 import { authOptions } from "../api/auth/[...nextauth]";
+import { SuperBill } from "@prisma/client";
+import { prisma } from "../../server/db/client";
+import { useEffect, useState } from "react";
 
-const people = [
-  {
-    patientid: "1",
-    name: "Lindsay Walton",
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    date: "2020-01-01",
-    status: "Approved",
-  },
-  {
-    patientid: "2",
-    name: "Lindsay Walton",
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    date: "2020-01-01",
-    status: "Pending",
-  },
-  {
-    patientid: "3",
-    name: "Lindsay Walton",
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    date: "2020-01-01",
-    status: "Pending",
-  },
-  {
-    patientid: "4",
-    name: "Lindsay Walton",
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    date: "2020-01-01",
-    status: "Pending",
-  },
-];
-
-export default function InsuranceAgent() {
+export default function InsuranceAgent({
+  data,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const router = useRouter();
-  const { data: session, status } = useSession();
-  if (status === "loading" || status === "unauthenticated") {
-    return null;
-  }
-  const data = trpc.user.getallsuperbills.useQuery({
-    email: session!.user!.email!,
-  });
-  console.log(data);
+  const [tableData, setTableData] = useState<any[]>([]);
+  // console.log(data[0]);
+
+  useEffect(() => {
+    const finaldata = data.map(
+      (item: { data: string; status: string; userId: string }) => {
+        return {
+          data: JSON.parse(item.data),
+          id: item.userId,
+          status: item.status,
+        };
+      }
+    );
+    setTableData(finaldata);
+  }, []);
+
+  // console.log(tableData);
 
   return (
     <>
@@ -123,37 +104,37 @@ export default function InsuranceAgent() {
                           </tr>
                         </thead>
                         <tbody className="bg-white">
-                          {people.map((person, personIdx) => (
+                          {tableData?.map((data, index) => (
                             <tr
-                              key={personIdx}
+                              key={index}
                               className={
-                                personIdx % 2 === 0 ? undefined : "bg-gray-50"
+                                index % 2 === 0 ? undefined : "bg-gray-50"
                               }
                             >
                               <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                {person.patientid}
+                                {data.id}
                               </td>
                               <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                {person.name}
+                                {data.data.patientname}
                               </td>
                               <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                <Link target="_blank" href={person.link}>
+                                <Link target="_blank" href={"/"}>
                                   <a className="text-blue-800 hover:underline">
                                     Open
                                   </a>
                                 </Link>
                               </td>
                               <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                {person.date}
+                                {data.data.date}
                               </td>
                               <td className="whitespace-nowrap py-4 pl-3 pr-4 text-sm font-medium sm:pr-6">
-                                {person.status === "Approved" ? (
+                                {data.status === "Approved" ? (
                                   <span className="rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
-                                    {person.status}
+                                    {data.status}
                                   </span>
                                 ) : (
                                   <span className="rounded-full bg-red-100 px-2 text-xs font-semibold leading-5 text-red-800">
-                                    {person.status}
+                                    {data.status}
                                   </span>
                                 )}
                               </td>
@@ -183,9 +164,23 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
       },
     };
   }
+  const data = await prisma.superBill.findMany({
+    where: {
+      User: {
+        email: user.user?.email,
+      },
+    },
+    select: {
+      image: false,
+      status: true,
+      data: true,
+      id: true,
+      userId: true,
+    },
+  });
   return {
     props: {
-      user,
+      data,
     },
   };
 };

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { GetServerSideProps } from "next";
 import { unstable_getServerSession } from "next-auth/next";
 import Link from "next/link";
@@ -37,6 +38,7 @@ const people = [
 ];
 
 export default function Example() {
+  const [selected, setSelected] = useState("Approved");
   return (
     <>
       <Navbar />
@@ -80,15 +82,19 @@ export default function Example() {
           <div className="mt-10">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex gap-x-4">
-                <button className="flex items-center justify-center whitespace-nowrap rounded-md bg-blue-800 px-8 py-2 font-bold text-white">
-                  <div>Approved</div>
-                </button>
-                <button className="flex items-center justify-center whitespace-nowrap rounded-md bg-gray-300 px-8 py-2 font-bold text-black">
-                  <div>Pending</div>
-                </button>
-                <button className="flex items-center justify-center whitespace-nowrap rounded-md bg-gray-300 px-8 py-2 font-bold text-black">
-                  <div>Denied</div>
-                </button>
+                {["Approved", "Pending", "Denied"].map((status, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelected(status)}
+                    className={`flex items-center justify-center whitespace-nowrap rounded-md ${
+                      selected === status
+                        ? "bg-blue-800 text-white"
+                        : "bg-gray-300 text-black"
+                    } px-8 py-2 font-bold`}
+                  >
+                    <div>{status}</div>
+                  </button>
+                ))}
               </div>
             </div>
           </div>

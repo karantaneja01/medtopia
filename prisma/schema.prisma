@@ -85,6 +85,7 @@ model SuperBill {
   data   Json    @db.Json
   User   User?   @relation(fields: [userId], references: [id])
   userId String?
+  image  String?
   status Status? @default(PENDING)
 }
 

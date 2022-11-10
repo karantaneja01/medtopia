@@ -24,6 +24,7 @@
     "base-64": "^1.0.0",
     "jotai": "^1.9.0",
     "js-base64": "^3.7.2",
+    "multiselect-react-dropdown": "^2.0.25",
     "next": "12.3.1",
     "next-auth": "^4.15.0",
     "react": "18.2.0",
